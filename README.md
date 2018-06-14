@@ -1,1 +1,2 @@
-# react-assignments
+# React training
+## Assignment 1
