@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #333;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
 }
@@ -28,12 +28,12 @@
 }
 
 .inputBox {
-  height: 200px;
+  height: 150px;
   background-color: #ddd;
 }
 
 .inputBox input {
-  margin: 50px auto;
+  margin-top: 20px;
   width: 300px;
   padding: 0 10px;
 }
@@ -44,4 +44,8 @@
 
 .inputBox input, button {
   height: 30px;
+}
+
+button.clearAll {
+  margin-top: 20px;
 }

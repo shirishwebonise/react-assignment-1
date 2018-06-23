@@ -23,10 +23,22 @@ class InputBox extends React.Component {
     });
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.inputValue === '') {
+      this.setState({
+        inputValue: ''
+      });
+    }
+  }
+
   render() {
     return(
       <div className="inputBox" style={{ backgroundColor: this.state.bgColor }} >
-        <input type="text" onBlur={this.props.blurHandler} onChange={this._handleChange} value={this.state.inputValue} />
+        <input type="text"
+               onBlur={this.props.blurHandler}
+               onChange={this._handleChange}
+               value={this.state.inputValue}
+               placeholder={this.props.placeholder} />
         <button onClick={this.changeBackground}>Change Color</button>
         <h2>{this.props.inputValue}</h2>
       </div>
